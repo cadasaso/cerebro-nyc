@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cerebro NYC · Contrato de datos y bitácora</title>
+  <style>
+    body{font:16px/1.7 system-ui;background:#091216;color:#d5e4e8;max-width:980px;margin:40px auto;padding:0 22px}
+    h1,h2{color:#80dcd0}a{color:#ffb090}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:12px;border:1px solid #34515b;text-align:left;vertical-align:top}code{color:#e4ca72}.scroll{overflow:auto}p,li{color:#a8bbc0}.tag{display:inline-block;padding:3px 8px;border:1px solid #55727c;border-radius:4px;font-size:12px}.ok{color:#80dcd0}.pending{color:#ffb090}
+  </style>
+</head>
+<body>
+  <a href="/">← Volver a Cerebro NYC</a>
+  <h1>Contrato de datos y bitácora</h1>
+  <p><strong>Integrantes:</strong> Carlos David Sanchez Soto y Alejandro Garcia Cortes.</p>
+  <p>Última revisión integral: 3 de noviembre de 2026. Esta es nuestra adaptación académica del taller y de la estructura de Cerebro Lima con ciudad, geografía y fuentes de Nueva York.</p>
+
+  <h2>Preguntas del sistema</h2>
+  <div class="scroll"><table>
+    <tr><th>Pregunta</th><th>Estado</th><th>Dónde la respondemos</th></tr>
+    <tr><td>¿Cómo varían la población, la vivienda y la actividad económica entre los cinco boroughs?</td><td><span class="tag ok">Respondida</span></td><td>Gente, Economía y Atlas con F19, F31 y ACS NTA 2020-2024.</td></tr>
+    <tr><td>¿Dónde se concentran los servicios, la infraestructura y los registros de seguridad y ambiente?</td><td><span class="tag ok">Respondida</span></td><td>Gemelo, Atlas, Cultura, Seguridad y Ambiente. La seguridad se publica agregada.</td></tr>
+    <tr><td>¿Cómo cambian los reportes ciudadanos y la atención pública hacia Nueva York?</td><td><span class="tag pending">Parcial</span></td><td>311 anual y mensual, prensa y Wikipedia. Quedan pendientes tiempos de cierre y satisfacción por falta de una fuente verificada comparable.</td></tr>
+  </table></div>
+
+  <h2>Contrato</h2>
+  <div class="scroll"><table>
+    <tr><th>Campo</th><th>Regla que aplicamos</th></tr>
+    <tr><td>Geografía</td><td>Usamos boroughs como contexto y NTA 2020 como unidad de detalle. Unimos ACS por código oficial y registros locales por punto en polígono. No imputamos valores del borough a los barrios.</td></tr>
+    <tr><td>Población</td><td>Separamos Censo 2020, PEP 2025 y ACS 2020-2024. Cada cifra conserva su producto y periodo.</td></tr>
+    <tr><td>Moneda y unidades</td><td>ACS en dólares de 2024, alturas de pies a metros, áreas de millas cuadradas a km² y presupuesto en millones de dólares.</td></tr>
+    <tr><td>Faltantes</td><td>No inventamos personas, alturas, edades, valores barriales ni presupuestos. Un valor sin cobertura queda nulo y una conexión fallida se informa.</td></tr>
+    <tr><td>Privacidad</td><td>Publicamos estadísticas agregadas e infraestructura pública. Omitimos teléfonos e identidades. Retiramos IDs, fechas exactas y coordenadas de colisiones; conservamos únicamente totales mensuales y agregados por borough.</td></tr>
+    <tr><td>PROXY</td><td>La oferta de metro del diagnóstico Midtown se marca como PROXY. No equivale a pasajeros, frecuencia, presión vial ni accesibilidad peatonal.</td></tr>
+    <tr><td>Servicios externos</td><td>OSM, Esri y Open-Meteo se identifican como conexiones externas. No se cuentan como archivos almacenados en el lago.</td></tr>
+  </table></div>
+
+  <h2>Herramientas de visualización probadas</h2>
+  <p>Probamos la población por borough en Apache ECharts y MapLibre GL JS antes de conservar las dos para funciones diferentes.</p>
+  <div class="scroll"><table>
+    <tr><th>Herramienta</th><th>Inicio</th><th>Licencia</th><th>Datos publicados</th><th>Resultado</th><th>Decisión</th></tr>
+    <tr><td>Apache ECharts 5.6</td><td>Node.js, npm y contenedor HTML.</td><td><a href="https://echarts.apache.org/en/download.html">Apache 2.0</a></td><td>JSON y módulos estáticos del sitio; render en el navegador.</td><td>Resolvió comparaciones, series, tooltips, SVG y móvil. No resuelve por sí solo la geografía.</td><td>Lo conservamos para gráficos.</td></tr>
+    <tr><td>MapLibre GL JS 5.6</td><td>Node.js, WebGL, GeoJSON y estilo de mapa.</td><td><a href="https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt">BSD 3-Clause</a></td><td>Capas propias en <code>public/data</code>; teselas OSM/Esri externas.</td><td>Resolvió polígonos, capas, selección y 3D. No reemplaza gráficos estadísticos y depende de WebGL.</td><td>Lo conservamos para Gemelo y Atlas.</td></tr>
+  </table></div>
+
+  <h2>Decisiones</h2>
+  <ul>
+    <li>Mostramos diferencias territoriales sin convertirlas en una clasificación de mejor o peor lugar.</li>
+    <li>Elegimos Vite, ECharts, MapLibre y Three.js porque permiten una aplicación estática sin servicio pago obligatorio.</li>
+    <li>Mantenemos las capas locales disponibles aunque fallen los mapas base externos.</li>
+    <li>Cada ventana de fuente muestra ID Fxx, entidad, vigencia, fecha de prueba, método y limitación.</li>
+  </ul>
+
+  <h2>Auditoría de trazabilidad</h2>
+  <p>La prueba funcional recorre todos los botones de cifras y fuentes renderizados por el sistema. En cada clic exige ID Fxx, fuente, entidad, vigencia, fecha de prueba, estado, método y enlace HTTPS original. La versión actual aprueba 143 clics y los 30 IDs del inventario (F01-F21 y F25-F33; F22-F24 no fueron asignados en la primera entrega).</p>
+  <p><a href="/trazabilidad.html">Abrir resultado completo de la auditoría F01–F33 →</a></p>
+
+  <h2>Bitácora de IA</h2>
+  <p>Usamos IA para localizar fuentes oficiales, comparar esquemas, proponer consultas SODA, redactar scripts y revisar la interfaz. Después verificamos conteos, periodos, campos y enlaces con scripts reproducibles.</p>
+  <ul>
+    <li>La API ACS sin clave redirigió a <code>missing_key</code>. Usamos QuickFacts y NYC Population FactFinder sin inventar datos.</li>
+    <li>La primera consulta anual de 311 agotó el tiempo. La repetimos y mantuvimos el corte anual separado de diciembre.</li>
+    <li>Sustituimos una fuente cultural que no representaba el universo buscado por DCLA.</li>
+    <li>Normalizamos explícitamente los códigos de borough de MTA.</li>
+    <li>Detectamos que el primer prototipo publicaba eventos viales demasiado detallados. Retiramos coordenadas, fechas e IDs.</li>
+    <li>Corregimos la fecha global para que represente la prueba más reciente sin borrar la fecha propia de cada fuente.</li>
+  </ul>
+
+  <h2>Reflexión sobre datos</h2>
+  <p>Consideramos que una cifra sin definición, periodo y territorio puede producir una comparación equivocada. Un censo, una estimación PEP y una encuesta ACS no son intercambiables. Tampoco una correlación con cinco boroughs demuestra causalidad. Preferimos dejar un dato pendiente antes que completar una vista con una cifra inventada.</p>
+
+  <h2>Reflexión sobre seguridad</h2>
+  <p>Que un dato sea público no significa que debamos republicarlo con el máximo detalle. Una fecha y coordenada de colisión pueden cruzarse con noticias y aumentar el riesgo de identificación indirecta. Por eso minimizamos el detalle, usamos agregados, no incrustamos secretos y no recolectamos información de visitantes.</p>
+
+  <h2>Ruta reproducible</h2>
+  <p><code>npm ci</code> instala dependencias. <code>npm run data</code> reconstruye cortes y derivados. <code>npm run verify</code> comprueba totales, privacidad, uniones, geometrías y pesos. <code>npm run verify:ui</code> abre y valida todos los controles de trazabilidad. <code>npm run build</code> genera el sitio estático.</p>
+  <p><a href="/data/catalog.json">Catálogo y fecha de cada consulta</a> · <a href="/data/sourceUsage.json">Matriz de uso de las 30 fuentes</a> · <a href="/data/territories.json">Base territorial NTA y auditoría</a></p>
+</body>
+</html>

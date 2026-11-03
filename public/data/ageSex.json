@@ -1,0 +1,1322 @@
+[
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "Less than 1",
+    "population": 10286
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "1- 2 yrs",
+    "population": 20228
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "3-4 yrs",
+    "population": 19725
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "5- 9 yrs",
+    "population": 50876
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "10-12 yrs",
+    "population": 29355
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "13-14 yrs",
+    "population": 20077
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "15-17 yrs",
+    "population": 28327
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "18-19 yrs",
+    "population": 19840
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "20-24 yrs",
+    "population": 50387
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "25-29 yrs",
+    "population": 60476
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "30-34 yrs",
+    "population": 57990
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "35-39 yrs",
+    "population": 51637
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "40-44 yrs",
+    "population": 48500
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "45-49 yrs",
+    "population": 46545
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "50-54 yrs",
+    "population": 49269
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "55-59 yrs",
+    "population": 49816
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "60-64 yrs",
+    "population": 43712
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "65-69 yrs",
+    "population": 34492
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "70-74 yrs",
+    "population": 28082
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "75-79 yrs",
+    "population": 20950
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "80-84 yrs",
+    "population": 14925
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Female",
+    "age": "85+ yrs",
+    "population": 17783
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "Less than 1",
+    "population": 10680
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "1- 2 yrs",
+    "population": 21006
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "3-4 yrs",
+    "population": 20605
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "5- 9 yrs",
+    "population": 52752
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "10-12 yrs",
+    "population": 30699
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "13-14 yrs",
+    "population": 21065
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "15-17 yrs",
+    "population": 29296
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "18-19 yrs",
+    "population": 21807
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "20-24 yrs",
+    "population": 50300
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "25-29 yrs",
+    "population": 57154
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "30-34 yrs",
+    "population": 54902
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "35-39 yrs",
+    "population": 47007
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "40-44 yrs",
+    "population": 41691
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "45-49 yrs",
+    "population": 40519
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "50-54 yrs",
+    "population": 43135
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "55-59 yrs",
+    "population": 42214
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "60-64 yrs",
+    "population": 36376
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "65-69 yrs",
+    "population": 27791
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "70-74 yrs",
+    "population": 20544
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "75-79 yrs",
+    "population": 13493
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "80-84 yrs",
+    "population": 8760
+  },
+  {
+    "borough": "Bronx",
+    "sex": "Male",
+    "age": "85+ yrs",
+    "population": 7580
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "Less than 1",
+    "population": 19749
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "1- 2 yrs",
+    "population": 38242
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "3-4 yrs",
+    "population": 36347
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "5- 9 yrs",
+    "population": 85864
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "10-12 yrs",
+    "population": 47374
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "13-14 yrs",
+    "population": 32389
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "15-17 yrs",
+    "population": 42804
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "18-19 yrs",
+    "population": 29247
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "20-24 yrs",
+    "population": 83161
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "25-29 yrs",
+    "population": 127355
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "30-34 yrs",
+    "population": 128732
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "35-39 yrs",
+    "population": 108382
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "40-44 yrs",
+    "population": 91601
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "45-49 yrs",
+    "population": 85231
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "50-54 yrs",
+    "population": 82164
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "55-59 yrs",
+    "population": 84232
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "60-64 yrs",
+    "population": 80832
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "65-69 yrs",
+    "population": 70034
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "70-74 yrs",
+    "population": 57975
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "75-79 yrs",
+    "population": 37930
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "80-84 yrs",
+    "population": 29042
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Female",
+    "age": "85+ yrs",
+    "population": 33228
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "Less than 1",
+    "population": 21094
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "1- 2 yrs",
+    "population": 39407
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "3-4 yrs",
+    "population": 37935
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "5- 9 yrs",
+    "population": 90807
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "10-12 yrs",
+    "population": 49886
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "13-14 yrs",
+    "population": 34162
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "15-17 yrs",
+    "population": 44100
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "18-19 yrs",
+    "population": 30251
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "20-24 yrs",
+    "population": 75822
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "25-29 yrs",
+    "population": 114708
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "30-34 yrs",
+    "population": 123772
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "35-39 yrs",
+    "population": 103501
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "40-44 yrs",
+    "population": 85434
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "45-49 yrs",
+    "population": 76547
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "50-54 yrs",
+    "population": 72585
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "55-59 yrs",
+    "population": 73039
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "60-64 yrs",
+    "population": 68367
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "65-69 yrs",
+    "population": 56430
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "70-74 yrs",
+    "population": 44840
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "75-79 yrs",
+    "population": 26116
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "80-84 yrs",
+    "population": 18460
+  },
+  {
+    "borough": "Brooklyn",
+    "sex": "Male",
+    "age": "85+ yrs",
+    "population": 16896
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "Less than 1",
+    "population": 8921
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "1- 2 yrs",
+    "population": 15603
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "3-4 yrs",
+    "population": 13882
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "5- 9 yrs",
+    "population": 33390
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "10-12 yrs",
+    "population": 18762
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "13-14 yrs",
+    "population": 12640
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "15-17 yrs",
+    "population": 17406
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "18-19 yrs",
+    "population": 21329
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "20-24 yrs",
+    "population": 61956
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "25-29 yrs",
+    "population": 99105
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "30-34 yrs",
+    "population": 91317
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "35-39 yrs",
+    "population": 68540
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "40-44 yrs",
+    "population": 55065
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "45-49 yrs",
+    "population": 51404
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "50-54 yrs",
+    "population": 50853
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "55-59 yrs",
+    "population": 50584
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "60-64 yrs",
+    "population": 49086
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "65-69 yrs",
+    "population": 46300
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "70-74 yrs",
+    "population": 42693
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "75-79 yrs",
+    "population": 31454
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "80-84 yrs",
+    "population": 21718
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Female",
+    "age": "85+ yrs",
+    "population": 25041
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "Less than 1",
+    "population": 9243
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "1- 2 yrs",
+    "population": 16222
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "3-4 yrs",
+    "population": 14297
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "5- 9 yrs",
+    "population": 34460
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "10-12 yrs",
+    "population": 18817
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "13-14 yrs",
+    "population": 12685
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "15-17 yrs",
+    "population": 17362
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "18-19 yrs",
+    "population": 16468
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "20-24 yrs",
+    "population": 49694
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "25-29 yrs",
+    "population": 88350
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "30-34 yrs",
+    "population": 89287
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "35-39 yrs",
+    "population": 69298
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "40-44 yrs",
+    "population": 55030
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "45-49 yrs",
+    "population": 51031
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "50-54 yrs",
+    "population": 51463
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "55-59 yrs",
+    "population": 50178
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "60-64 yrs",
+    "population": 44638
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "65-69 yrs",
+    "population": 37992
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "70-74 yrs",
+    "population": 30999
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "75-79 yrs",
+    "population": 21657
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "80-84 yrs",
+    "population": 14195
+  },
+  {
+    "borough": "Manhattan",
+    "sex": "Male",
+    "age": "85+ yrs",
+    "population": 13836
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "Less than 1",
+    "population": 14620
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "1- 2 yrs",
+    "population": 28231
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "3-4 yrs",
+    "population": 27366
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "5- 9 yrs",
+    "population": 66791
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "10-12 yrs",
+    "population": 36955
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "13-14 yrs",
+    "population": 25644
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "15-17 yrs",
+    "population": 35661
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "18-19 yrs",
+    "population": 24176
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "20-24 yrs",
+    "population": 66546
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "25-29 yrs",
+    "population": 92744
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "30-34 yrs",
+    "population": 95095
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "35-39 yrs",
+    "population": 84741
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "40-44 yrs",
+    "population": 79509
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "45-49 yrs",
+    "population": 78779
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "50-54 yrs",
+    "population": 82229
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "55-59 yrs",
+    "population": 85804
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "60-64 yrs",
+    "population": 81478
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "65-69 yrs",
+    "population": 68466
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "70-74 yrs",
+    "population": 55015
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "75-79 yrs",
+    "population": 38292
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "80-84 yrs",
+    "population": 28490
+  },
+  {
+    "borough": "Queens",
+    "sex": "Female",
+    "age": "85+ yrs",
+    "population": 32965
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "Less than 1",
+    "population": 15127
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "1- 2 yrs",
+    "population": 29694
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "3-4 yrs",
+    "population": 28643
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "5- 9 yrs",
+    "population": 70144
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "10-12 yrs",
+    "population": 39243
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "13-14 yrs",
+    "population": 27112
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "15-17 yrs",
+    "population": 37334
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "18-19 yrs",
+    "population": 26260
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "20-24 yrs",
+    "population": 64049
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "25-29 yrs",
+    "population": 89954
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "30-34 yrs",
+    "population": 97838
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "35-39 yrs",
+    "population": 87027
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "40-44 yrs",
+    "population": 78455
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "45-49 yrs",
+    "population": 77846
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "50-54 yrs",
+    "population": 80159
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "55-59 yrs",
+    "population": 82151
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "60-64 yrs",
+    "population": 75386
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "65-69 yrs",
+    "population": 59887
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "70-74 yrs",
+    "population": 44878
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "75-79 yrs",
+    "population": 28226
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "80-84 yrs",
+    "population": 19125
+  },
+  {
+    "borough": "Queens",
+    "sex": "Male",
+    "age": "85+ yrs",
+    "population": 17329
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "Less than 1",
+    "population": 2579
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "1- 2 yrs",
+    "population": 5321
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "3-4 yrs",
+    "population": 5498
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "5- 9 yrs",
+    "population": 14410
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "10-12 yrs",
+    "population": 9032
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "13-14 yrs",
+    "population": 6288
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "15-17 yrs",
+    "population": 9236
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "18-19 yrs",
+    "population": 5940
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "20-24 yrs",
+    "population": 14400
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "25-29 yrs",
+    "population": 16150
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "30-34 yrs",
+    "population": 16571
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "35-39 yrs",
+    "population": 15733
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "40-44 yrs",
+    "population": 15794
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "45-49 yrs",
+    "population": 16586
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "50-54 yrs",
+    "population": 17755
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "55-59 yrs",
+    "population": 18542
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "60-64 yrs",
+    "population": 17434
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "65-69 yrs",
+    "population": 14452
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "70-74 yrs",
+    "population": 12022
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "75-79 yrs",
+    "population": 8020
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "80-84 yrs",
+    "population": 5275
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Female",
+    "age": "85+ yrs",
+    "population": 6197
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "Less than 1",
+    "population": 2816
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "1- 2 yrs",
+    "population": 5825
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "3-4 yrs",
+    "population": 5831
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "5- 9 yrs",
+    "population": 15264
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "10-12 yrs",
+    "population": 9669
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "13-14 yrs",
+    "population": 6604
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "15-17 yrs",
+    "population": 9615
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "18-19 yrs",
+    "population": 6142
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "20-24 yrs",
+    "population": 14724
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "25-29 yrs",
+    "population": 16497
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "30-34 yrs",
+    "population": 16648
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "35-39 yrs",
+    "population": 15384
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "40-44 yrs",
+    "population": 15201
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "45-49 yrs",
+    "population": 15806
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "50-54 yrs",
+    "population": 16768
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "55-59 yrs",
+    "population": 17554
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "60-64 yrs",
+    "population": 16244
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "65-69 yrs",
+    "population": 12869
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "70-74 yrs",
+    "population": 10036
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "75-79 yrs",
+    "population": 6221
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "80-84 yrs",
+    "population": 3676
+  },
+  {
+    "borough": "Staten Island",
+    "sex": "Male",
+    "age": "85+ yrs",
+    "population": 3118
+  }
+]

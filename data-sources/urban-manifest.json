@@ -1,0 +1,41 @@
+{
+  "retrieved": "2026-10-26T16:55:30.071Z",
+  "sources": [
+    {
+      "key": "urban-energy",
+      "id": "5zyy-y8am",
+      "format": "json",
+      "where": "report_year=2023",
+      "select": "report_year,year_ending,property_id,parent_property_id,number_of_buildings,property_name,borough,latitude,longitude,site_eui_kbtu_ft,electricity_use_grid_purchase_1,property_gfa_self_reported",
+      "order": ":id",
+      "rows": 33684,
+      "urls": [
+        "https://data.cityofnewyork.us/resource/5zyy-y8am.json?%24select=report_year%2Cyear_ending%2Cproperty_id%2Cparent_property_id%2Cnumber_of_buildings%2Cproperty_name%2Cborough%2Clatitude%2Clongitude%2Csite_eui_kbtu_ft%2Celectricity_use_grid_purchase_1%2Cproperty_gfa_self_reported&%24where=report_year%3D2023&%24order=%3Aid&%24limit=10000&%24offset=0",
+        "https://data.cityofnewyork.us/resource/5zyy-y8am.json?%24select=report_year%2Cyear_ending%2Cproperty_id%2Cparent_property_id%2Cnumber_of_buildings%2Cproperty_name%2Cborough%2Clatitude%2Clongitude%2Csite_eui_kbtu_ft%2Celectricity_use_grid_purchase_1%2Cproperty_gfa_self_reported&%24where=report_year%3D2023&%24order=%3Aid&%24limit=10000&%24offset=10000",
+        "https://data.cityofnewyork.us/resource/5zyy-y8am.json?%24select=report_year%2Cyear_ending%2Cproperty_id%2Cparent_property_id%2Cnumber_of_buildings%2Cproperty_name%2Cborough%2Clatitude%2Clongitude%2Csite_eui_kbtu_ft%2Celectricity_use_grid_purchase_1%2Cproperty_gfa_self_reported&%24where=report_year%3D2023&%24order=%3Aid&%24limit=10000&%24offset=20000",
+        "https://data.cityofnewyork.us/resource/5zyy-y8am.json?%24select=report_year%2Cyear_ending%2Cproperty_id%2Cparent_property_id%2Cnumber_of_buildings%2Cproperty_name%2Cborough%2Clatitude%2Clongitude%2Csite_eui_kbtu_ft%2Celectricity_use_grid_purchase_1%2Cproperty_gfa_self_reported&%24where=report_year%3D2023&%24order=%3Aid&%24limit=10000&%24offset=30000"
+      ],
+      "sha256": "691131f93cb60530a6d1bdb9bae28bd2157e8946276f7dbe86d0fafe03acc1dc",
+      "source": "https://data.cityofnewyork.us/d/5zyy-y8am",
+      "name": "NYC Building Energy and Water Data Disclosure for Local Law 84 2023 to Present (Data for Calendar Year 2022-Present)",
+      "updated": 1764097355
+    },
+    {
+      "key": "urban-buildings",
+      "id": "5zhs-2jue",
+      "format": "geojson",
+      "where": "within_box(the_geom,40.775,-74.015,40.735,-73.965)",
+      "select": "the_geom,bin,height_roof,construction_year,feature_code,doitt_id",
+      "order": ":id",
+      "rows": 11404,
+      "urls": [
+        "https://data.cityofnewyork.us/resource/5zhs-2jue.geojson?%24select=the_geom%2Cbin%2Cheight_roof%2Cconstruction_year%2Cfeature_code%2Cdoitt_id&%24where=within_box%28the_geom%2C40.775%2C-74.015%2C40.735%2C-73.965%29&%24order=%3Aid&%24limit=10000&%24offset=0",
+        "https://data.cityofnewyork.us/resource/5zhs-2jue.geojson?%24select=the_geom%2Cbin%2Cheight_roof%2Cconstruction_year%2Cfeature_code%2Cdoitt_id&%24where=within_box%28the_geom%2C40.775%2C-74.015%2C40.735%2C-73.965%29&%24order=%3Aid&%24limit=10000&%24offset=10000"
+      ],
+      "sha256": "0bc0647197c11704b14e6d6b62a117b0b47445dda085fe8f52711de65f2ea83b",
+      "source": "https://data.cityofnewyork.us/d/5zhs-2jue",
+      "name": "BUILDING",
+      "updated": 1792916467
+    }
+  ]
+}

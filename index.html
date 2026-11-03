@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#091216">
+  <meta name="description" content="Cerebro NYC: gemelo territorial, mapas, población, vivienda, movilidad y datos públicos verificables de Nueva York.">
+  <title>Cerebro NYC | Nueva York, con evidencia</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#panorama"><span class="brand-dot"></span><span>CEREBRO NYC<small>Nueva York · FIPS 3651000<br>Estados Unidos</small></span></a>
+    <nav id="navigation" aria-label="Secciones"></nav>
+    <div class="sidebar-bottom"><small id="lake-status">Datos públicos · Nueva York</small><button id="open-search"><i data-lucide="search"></i> Buscar <kbd>⌘ K</kbd></button><button id="presentation"><i data-lucide="play"></i> Presentación</button><a href="#fuentes"><i data-lucide="database"></i> Fuentes y método</a></div>
+  </aside>
+  <div class="mobile-bar"><button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i data-lucide="menu"></i></button><a href="#panorama">CEREBRO NYC</a><button id="mobile-search" aria-label="Buscar"><i data-lucide="search"></i></button></div>
+  <main id="main">
+    <header class="topbar"><span id="active-section">◎ PANORAMA</span><div><time id="clock"></time><span id="weather-top">Nueva York · EDT</span></div></header>
+    <div id="app"><p class="loading">Cargando datos verificados de Nueva York…</p></div>
+    <footer>Cerebro NYC · Nueva York · Carlos David Sanchez Soto · Alejandro Garcia Cortes · Datos públicos agregados, con fuente y vigencia. <a href="#fuentes">Método y limitaciones</a></footer>
+  </main>
+  <dialog id="search-dialog"><div class="dialog-head"><h2>Buscar en Cerebro NYC</h2><button data-close="search-dialog" aria-label="Cerrar búsqueda"><i data-lucide="x"></i></button></div><input id="global-search" type="search" placeholder="Sección, borough o lugar…" aria-label="Buscar sección o lugar"><div id="search-results"></div></dialog>
+  <dialog id="source-dialog"><div class="dialog-head"><h2>Procedencia del dato</h2><button data-close="source-dialog" aria-label="Cerrar fuente"><i data-lucide="x"></i></button></div><div id="source-detail"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

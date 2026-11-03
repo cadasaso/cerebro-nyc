@@ -1,0 +1,27 @@
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const {spawn}=require('node:child_process');const fs=require('node:fs');const assert=require('node:assert/strict');let server,browser;
+(async()=>{
+ server=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1','--port','5189','--strictPort'],{windowsHide:true,stdio:['ignore','pipe','pipe']});
+ await new Promise((resolve,reject)=>{server.stdout.on('data',c=>{if(c.toString().includes('Local:'))resolve();});server.on('error',reject);server.on('exit',c=>reject(Error('Server '+c)));});
+ browser=await chromium.launch({channel:'msedge',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const context=await browser.newContext({viewport:{width:1440,height:1000},permissions:['clipboard-read','clipboard-write'],acceptDownloads:true});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/*',r=>['127.0.0.1','blob:'].includes(new URL(r.request().url()).hostname)||r.request().url().startsWith('blob:')?r.continue():r.abort());
+ await page.goto('http://127.0.0.1:5189/',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.documentElement.dataset.ready==='true');
+ const panel=page.locator('#urban-diagnostic');await panel.scrollIntoViewIfNeeded();assert.equal(await page.locator('#urban-grid g').count(),9);
+ const before=await page.locator('#urban-reading').innerText();await page.locator('[data-urban-preset="Electricidad"]').click();assert.notEqual(await page.locator('#urban-reading').innerText(),before);
+ for(let i=0;i<3;i++)await page.locator(`[data-urban-weight="${i}"]`).fill('0');assert((await page.locator('#urban-reading').innerText()).includes('Sin índice'));
+ await page.locator('[data-urban-preset="Equilibrio"]').click();await page.locator('#urban-swap').click();assert.equal(await page.locator('#urban-primary').inputValue(),'M2');
+ await page.locator('#urban-grid [data-urban-zone="M5"]').focus();await page.keyboard.press('Enter');assert.equal(await page.locator('#urban-primary').inputValue(),'M5');
+ await page.locator('#urban-comparison').selectOption('M2');
+ await page.locator('#urban-copy').click();assert((await page.evaluate(()=>navigator.clipboard.readText())).includes('2023'));
+ const downloadPromise=page.waitForEvent('download');await page.locator('#urban-download').click();const download=await downloadPromise;const exported=JSON.parse(fs.readFileSync(await download.path()));assert.equal(exported.rows.length,9);assert.equal(exported.selection.primary,'M5');
+ fs.mkdirSync('qa-priority3',{recursive:true});await panel.screenshot({path:'qa-priority3/diagnostic-desktop.png'});
+ await page.locator('#urban-open').click();await page.waitForFunction(()=>document.querySelector('#territory-map').dataset.mapReady==='true',{},{timeout:60000});
+ await page.locator('[name="basemap"][value="plain"]').check();await page.locator('[data-lens="energy"]').click();assert((await page.locator('#map-summary').innerText()).includes('MTA:'));
+ await page.locator('[data-lens="mobility"]').click();assert.equal(await page.locator('[data-layer-check="crashPoints"]').count(),0);assert((await page.locator('#map-summary').innerText()).includes('no mide presión vial'));
+ await page.locator('[data-lens="buildings"]').click();await page.waitForTimeout(800);await page.locator('#map-shell').screenshot({path:'qa-priority3/gemelo-local.png'});
+ await page.locator('#reset-map').click();assert.equal(await page.locator('[data-lens="urban"]').getAttribute('class'),'active');
+ const result={cells:9,webglReady:true,renderedBuildings:await page.locator('#territory-map').getAttribute('data-buildings'),copy:true,download:true,externalServices:'bloqueados; se prueba cartografía local',errors};
+ await page.setViewportSize({width:390,height:844});await panel.scrollIntoViewIfNeeded();await page.waitForTimeout(350);result.mobileOverflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);await panel.screenshot({path:'qa-priority3/diagnostic-mobile.png'});
+ fs.writeFileSync('qa-priority3/result.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));assert(!result.mobileOverflow);assert.deepEqual(errors,[]);
+})().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{await browser?.close();server?.kill();});

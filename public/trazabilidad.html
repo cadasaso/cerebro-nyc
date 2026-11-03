@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cerebro NYC · Auditoría de trazabilidad F01-F33</title>
+  <style>
+    :root{color-scheme:dark}body{font:16px/1.6 system-ui;background:#091216;color:#d5e4e8;max-width:1180px;margin:36px auto;padding:0 20px}h1,h2{color:#80dcd0}a{color:#ffb090}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}.summary div{border:1px solid #34515b;border-radius:6px;padding:16px}.summary strong{display:block;font-size:28px;color:#fff}.scroll{overflow:auto;border:1px solid #34515b;border-radius:6px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px;border-bottom:1px solid #28414a;text-align:left;vertical-align:top}th{position:sticky;top:0;background:#102027;color:#80dcd0}tr:last-child td{border-bottom:0}.ok{color:#80dcd0}.error{color:#ff8a5b}code{color:#e4ca72}.run-controls{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:20px 0}label{display:grid;gap:4px}button,select{font:inherit;color:inherit;background:#15303a;border:1px solid #55727c;border-radius:5px;padding:9px 14px;min-height:44px}button{cursor:pointer}button:disabled{opacity:.5;cursor:wait}#live-result{white-space:pre-wrap;overflow-wrap:anywhere}#test-frame{display:block;max-width:100%;height:844px;border:1px solid #34515b;margin:18px auto}#test-frame[hidden]{display:none}.note{color:#a8bbc0;font-size:14px}@media(max-width:680px){.summary{grid-template-columns:1fr}body{margin:20px auto}table{min-width:900px}}
+  </style>
+</head>
+<body>
+  <a href="/">← Volver a Cerebro NYC</a>
+  <h1>Auditoría de trazabilidad F01-F33</h1>
+  <p>Esta evidencia se genera con <code>npm run verify:ui</code>. La prueba abre todos los controles de cifras y fuentes y exige los campos de trazabilidad antes de aprobar. El inventario tiene 30 IDs: F01-F21 y F25-F33; F22-F24 no fueron asignados en la primera entrega.</p>
+  <div class="summary"><div><span>Resultado</span><strong id="status">Cargando…</strong></div><div><span>Clics comprobados</span><strong id="clicks">—</strong></div><div><span>IDs Fxx observados</span><strong id="ids">—</strong></div></div>
+  <p id="tested"></p>
+  <h2>Comprobar el sitio en este navegador</h2>
+  <p>Esta prueba carga la aplicación publicada y activa cada botón de cifra o fuente con su manejador real. Conserva la fecha de consulta de cada fuente: ejecutar la prueba no actualiza los datos.</p>
+  <div class="run-controls"><label>Vista<select id="test-viewport"><option value="1180">Escritorio · 1180 px</option><option value="390">Móvil · 390 px</option><option value="412">Móvil · 412 px</option></select></label><button id="run-test" type="button">Verificar clics en la web</button><button id="download-test" type="button" disabled>Descargar evidencia JSON</button></div>
+  <p id="live-result" role="status" aria-live="polite">Prueba web todavía no ejecutada en esta sesión.</p>
+  <p class="note">Alcance: activación programática de los controles, apertura y cierre del modal, campos obligatorios y formato de los enlaces. No certifica disponibilidad de las fuentes externas, WebGL ni accesibilidad de todos los recorridos.</p>
+  <iframe id="test-frame" title="Aplicación publicada bajo prueba" hidden></iframe>
+  <h2>Resultado por control</h2>
+  <div class="scroll"><table><thead><tr><th>#</th><th>Control</th><th>ID</th><th>Fuente / entidad</th><th>Vigencia</th><th>Probado</th><th>Estado</th><th>Original</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <script type="module" src="/traceability.js"></script>
+</body>
+</html>
