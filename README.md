@@ -45,20 +45,13 @@ La prueba `npm run verify:ui` recorre todos los botones de cifras y fuentes que 
 
 En la página de auditoría se puede pulsar **Verificar clics en la web** para repetir la activación programática en la aplicación publicada, sin sustituirla por un DOM simulado. Permite escoger escritorio, móvil de 390 px o móvil de 412 px y descargar la evidencia JSON. Comprueba apertura y cierre de cada ficha, sus campos y el desbordamiento horizontal. No certifica que las fuentes externas respondan ni valida WebGL o todos los recorridos de accesibilidad. Una prueba de interfaz no cambia la fecha real de consulta de los datos.
 
-## Bitácora de exploración de visualización
+## Comparación de herramientas y decisión
 
-Probamos los mismos datos de población por borough en dos herramientas que están implementadas en el sitio.
+Se añade un caso reproducible con los mismos cinco totales del Censo 2020: barras ECharts 5.6.0 y coropletas MapLibre GL JS 5.6.2. Incluye tabla de control (8.804.190 personas), selección coordinada, exportación SVG, requisitos, licencias, ubicación de datos y límites de interpretación.
 
-| Herramienta | Qué pidió para empezar | Licencia | Dónde quedan los datos al publicar | Qué resolvió | Qué no resolvió | Decisión |
-|---|---|---|---|---|---|---|
-| Apache ECharts 5.6 | Node.js, instalación con `npm` y un contenedor HTML | Apache License 2.0 | Los valores quedan en los JSON y módulos estáticos del sitio; el gráfico se genera en el navegador | Comparaciones, series, tooltips, SVG y adaptación móvil | No dibuja por sí solo la geografía NTA ni administra mapas base | Se conserva para gráficos y comparaciones |
-| MapLibre GL JS 5.6 | Node.js, WebGL, GeoJSON y un estilo de mapa | BSD 3-Clause | Las capas propias quedan en `public/data`; OSM y Esri se consultan como teselas externas con atribución | Polígonos, selección territorial, capas, navegación y edificios 3D | No reemplaza los gráficos estadísticos y depende de WebGL; las teselas externas pueden fallar | Se conserva para el Gemelo y Atlas |
+[Comparación completa y decisión razonada](docs/COMPARACION-HERRAMIENTAS.md). Al iniciar la aplicación, abrir **/comparacion.html**. Las licencias y bibliotecas se incluyen localmente. No se presentan métricas de rendimiento que no se hayan medido.
 
-ECharts publica su licencia en https://echarts.apache.org/en/download.html. MapLibre publica su licencia en https://github.com/maplibre/maplibre-gl-js/blob/main/LICENSE.txt.
-
-## Decisión de herramienta
-
-Elegimos una aplicación estática con Vite. ECharts resuelve los gráficos, MapLibre la cartografía y Three.js la extrusión 3D. Esta combinación permite publicar en alojamiento estático, mantener los datos de la entrega dentro del repositorio y evitar una base de datos o servicio pago. Los mapas base externos son opcionales: las capas locales siguen disponibles si las teselas no responden.
+Elegimos ECharts para comparar magnitudes y MapLibre para localizar los datos. Ambas cumplen tareas complementarias; Vite permite conservarlas en una aplicación estática.
 
 ## Bitácora de IA
 
@@ -111,6 +104,8 @@ Revisamos el sitio en 390 x 844 y 412 x 915. Comprobamos navegación, tablas, ta
 El repositorio no incluye `node_modules`, contraseñas, llaves ni datos individuales de residentes.
 
 ## Actualización F34–F36
+
+**Estado: versión preparada y pruebas locales aprobadas; publicación nueva pendiente de comprobar.** El equipo realizará la subida a Vercel. [Estado y comprobaciones de publicación](docs/ESTADO-PUBLICACION-F34-F36.md).
 
 Se integran cierres administrativos 311 para la cohorte diciembre 2025, satisfacción de respuestas 2025 y aforos históricos DOT 2023–2025. Las tablas indican denominadores, fechas, exclusiones y cobertura. La satisfacción no se enlaza con la cohorte de diciembre. Los aforos no acreditan congestión, capacidad vial ni cobertura completa de las nueve celdas.
 

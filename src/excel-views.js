@@ -1,5 +1,9 @@
 export const uniqueHealthRows=rows=>[...new Map(rows.map(r=>[JSON.stringify(r),r])).values()];
 export function mountExcelViews({D,catalog,esc,fmt,bars,plot}){
+  if(D.culture?.length&&!D.culture.some(r=>Number.isFinite(+r.longitude)&&Number.isFinite(+r.latitude))){
+    const note=document.createElement('p');note.className='note';note.id='culture-location-note';note.textContent='El directorio cultural publicado conserva nombres y borough. Se omiten las ubicaciones puntuales; consulta su distribución agregada en los gráficos y el atlas.';document.querySelector('#cultura').append(note);
+    document.querySelectorAll('[data-layer-toggle="culture"],[data-layer-check="culture"]').forEach(el=>{el.disabled=true;el.title='Ubicaciones puntuales omitidas; consulta la distribución agregada.';});
+  }
   const $=s=>document.querySelector(s),panel=(section,id,html)=>{const el=document.createElement('article');el.id=id;el.className='chart-panel';el.innerHTML=html;$('#'+section).append(el);return el;},source=key=>{const s=catalog.find(x=>x.key===key);return s?`<p class="note"><a href="${esc(s.url||s.source)}" target="_blank" rel="noopener">${esc(s.agency)} · ${esc(s.period)} · consulta ${esc(s.tested)}</a></p>`:'';};
   if(D.ageSex?.length){
     panel('gente','census-age-panel',`<h2>Población por edad y sexo · Censo 2020</h2><label>Territorio<select id="age-borough"><option>NYC</option>${[...new Set(D.ageSex.map(r=>r.borough))].map(b=>`<option>${esc(b)}</option>`).join('')}</select></label><div id="age-pyramid" class="chart tall" role="img" aria-label="Pirámide de población por edad y sexo"></div><p id="age-total" role="status"></p><p class="note">F31. Intervalos de edad originales de anchura desigual. Las barras representan personas por grupo, no densidad por año de edad. Censo 2020, distinto de ACS 2020–2024 y PEP 2025. Los valores negativos del eje solo ubican a los hombres a la izquierda.</p>${source('ageSex')}`);

@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const root=new URL('../',import.meta.url),read=p=>JSON.parse(readFileSync(new URL(p,root)));
+const c=read('public/data/toolComparison.json'),pop=read('public/data/ageSex.json'),geo=read('public/data/boroughs.json');
+assert.equal(c.rows.length,5);assert.equal(c.total,8804190);assert.equal(c.rows.reduce((s,r)=>s+r.population,0),c.total);
+for(const r of c.rows)assert.equal(r.population,pop.filter(p=>p.borough===r.borough).reduce((s,p)=>s+p.population,0));
+assert.deepEqual(new Set(geo.features.map(f=>f.properties.boroname)),new Set(c.rows.map(r=>r.borough)));
+const p=read('package.json');assert.equal(p.dependencies.echarts,c.tools.echarts);assert.equal(p.dependencies['maplibre-gl'],c.tools.maplibre);
+for(const file of ['public/comparacion.html','public/comparacion/caso.js','public/comparacion/echarts.min.js','public/comparacion/maplibre-gl.js'])assert(readFileSync(new URL(file,root)).length>0);
+console.log('Comparación: mismos totales censales, unión 5/5, versiones y archivos OK');

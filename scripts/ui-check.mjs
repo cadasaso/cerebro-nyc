@@ -17,7 +17,7 @@ w.IntersectionObserver=class{observe(){}disconnect(){}};
 w.ResizeObserver=class{observe(){}disconnect(){}};
 w.AbortSignal=AbortSignal;
 w.fetch=async url=>{
-  if(String(url).startsWith('/data/')){const data=JSON.parse(readFileSync(new URL('public'+url,base)));return {ok:true,json:async()=>data};}
+  if(String(url).startsWith('/data/')){const data=JSON.parse(readFileSync(new URL((process.env.UI_DATA_DIR||'public')+url,base)));return {ok:true,json:async()=>data};}
   throw new Error('Las consultas externas se excluyen de esta prueba de DOM');
 };
 const source=readFileSync(new URL('src/main.js',base),'utf8');
