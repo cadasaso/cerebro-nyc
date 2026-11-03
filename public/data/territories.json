@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T17:16:45.379Z",
+  "generatedAt": "2026-11-03T18:40:40.093Z",
   "unit": {
     "key": "NTA2020",
     "name": "Áreas estadísticas NTA 2020",
@@ -23,7 +23,7 @@
       "sha256": "204bc81154d408a4cb53edc0418fae7e5d5d2325c7921a7ba30b5cb89dbae436"
     },
     "ntaDemographics": {
-      "sha256": "eb3c018c36446c2d121330497c36f14d89a466b5e3a683d18033e98fd1479ae2"
+      "sha256": "ab55f2ad280139cb38e2fe60756305a869c521396bcfbd31cbb3e0abd2b2f804"
     },
     "subway": {
       "sha256": "b4884cf79b349ed42f37231992ba9ca2e73cb45791041ab019ca89616d55fc73"

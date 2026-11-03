@@ -25,7 +25,7 @@ No presentamos los índices como calidad de vida, riesgo o causalidad. Los marca
 |---|---|---|
 | ¿Cómo varían la población, la vivienda y la actividad económica entre los cinco boroughs? | Respondida | Secciones Gente, Economía y Atlas. Usamos F19, F31 y ACS NTA 2020-2024. |
 | ¿Dónde se concentran los servicios, la infraestructura y los registros de seguridad y ambiente? | Respondida | Gemelo, Atlas, Cultura, Seguridad y Ambiente. Publicamos infraestructura puntual y seguridad agregada por territorio. |
-| ¿Cómo cambian los reportes ciudadanos y la atención pública hacia Nueva York? | Parcial | Mostramos 311 anual y mensual, prensa y Wikipedia. Quedan pendientes tiempos de cierre y satisfacción porque no contamos con una fuente verificada comparable en el lago. |
+| ¿Cómo cambian los reportes ciudadanos y la atención pública hacia Nueva York? | Respondida con límites | Mostramos 311 anual y mensual, prensa y Wikipedia. Incorporamos cierres administrativos de diciembre de 2025 y satisfacción de respuestas 2025 (F34–F35); son cohortes diferentes. |
 
 ## Uso y protección de los datos
 
@@ -109,3 +109,9 @@ Revisamos el sitio en 390 x 844 y 412 x 915. Comprobamos navegación, tablas, ta
 - `Diccionario_de_datos_Cerebro_NYC_ACTUALIZADO.xlsx`: diccionario entregable.
 
 El repositorio no incluye `node_modules`, contraseñas, llaves ni datos individuales de residentes.
+
+## Actualización F34–F36
+
+Se integran cierres administrativos 311 para la cohorte diciembre 2025, satisfacción de respuestas 2025 y aforos históricos DOT 2023–2025. Las tablas indican denominadores, fechas, exclusiones y cobertura. La satisfacción no se enlaza con la cohorte de diciembre. Los aforos no acreditan congestión, capacidad vial ni cobertura completa de las nueve celdas.
+
+Las consultas agregadas y sus SHA-256 están en `data-sources/outcomes-manifest.json`. No se descargan identidades ni direcciones de solicitantes 311. `node scripts/pull-outcomes.mjs` consulta 311 y aforos 2025; `node scripts/pull-traffic-2024.mjs 2024` y `node scripts/pull-traffic-2024.mjs 2023` completan los años históricos. Con Python y `pyproj==3.8.0`, `python scripts/build-outcomes.py` reconstruye los indicadores; las instantáneas publicadas permiten abrir y compilar el sistema sin Python ni consultas externas. `node scripts/verify-outcomes.mjs` comprueba denominadores, agregados y huellas de las descargas.

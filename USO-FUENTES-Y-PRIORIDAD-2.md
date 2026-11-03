@@ -59,11 +59,11 @@ Antes de este cambio faltaba integrar F25, F31, F32 y F33. Se descargaron y se c
 
 ## Límites pendientes
 
-- Prioridad 3: diagnóstico Midtown implementado con oferta de metro como proxy; presión vial medida sigue pendiente. Véase PRIORIDAD-3.md.
+- Prioridad 3: diagnóstico Midtown implementado con oferta de metro como proxy; aforos históricos DOT 2023–2025 añadidos como F36 en una vista separada; la cobertura no permite medir congestión ni puntuar toda la red. Véase PRIORIDAD-3.md.
 - El índice mezcla períodos documentados y conteos dependientes del tamaño de área. Los márgenes de error originales no se propagan al índice.
 - No se asignan a NTA fuentes disponibles solo por borough o institución sin un cruce validado.
 - Las fuentes externas OSM, Esri y pronóstico están configuradas; las pruebas locales no prueban su disponibilidad en el navegador del usuario.
-- Esta entrega no despliega el sitio.
+- El repositorio incluye la configuración de publicación en Vercel.
 
 ## Reproducción
 

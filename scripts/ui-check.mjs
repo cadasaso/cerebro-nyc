@@ -38,6 +38,10 @@ for(let i=0;i<100&&w.document.documentElement.dataset.ready!=='true';i++)await n
 const doc=w.document;
 assert.equal(doc.documentElement.dataset.ready,'true',errors.join('\n'));
 assert.equal(doc.querySelectorAll('.section').length,13);
+assert.equal(doc.querySelectorAll('#service-outcomes tbody tr').length,10);
+assert.equal(doc.querySelectorAll('#traffic-counts tbody tr').length,9);
+assert(doc.querySelector('#service-outcomes').textContent.includes('F35'));
+assert(doc.querySelector('#traffic-counts').textContent.includes('Sin dato'));
 assert.equal(doc.querySelectorAll('#people-metrics .metric').length,16);
 assert.equal(doc.querySelectorAll('#navigation a').length,13);
 assert(plots.size>=30);

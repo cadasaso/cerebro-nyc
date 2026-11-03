@@ -1,0 +1,41 @@
+{
+  "retrieved": "2026-11-03T18:34:06.137Z",
+  "queries": [
+    {
+      "id": "7ym2-wayt",
+      "url": "https://data.cityofnewyork.us/resource/7ym2-wayt.json?%24select=requestid%2Csegmentid%2Cwktgeom%2Cstreet%2Cfromst%2Ctost%2Cdirection%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cvol&%24where=boro%3D%27Manhattan%27+AND+yr%3D2025&%24order=requestid%2Csegmentid%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cdirection&%24limit=50000",
+      "rows": 18048,
+      "sha256": "0b27b1aca54c938f68ab188a540270f7523c578fc04289c87f878a4a4f845f08"
+    },
+    {
+      "id": "5ijn-vbdv",
+      "url": "https://data.cityofnewyork.us/resource/5ijn-vbdv.json?%24select=borough%2Coverall_satisfaction%2Ccount%28*%29+as+n&%24where=year%3D2025&%24group=borough%2Coverall_satisfaction&%24order=borough%2Coverall_satisfaction&%24limit=50000",
+      "rows": 30,
+      "sha256": "f140a94403e64fdd8289dd0891eb625e71079fc35cc2737d98003bff54a13546"
+    },
+    {
+      "id": "erm2-nwe9",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=borough%2Ccount%28*%29+as+total%2Ccount%28closed_date%29+as+with_closed_date&%24where=created_date+%3E%3D+%272025-12-01T00%3A00%3A00%27+AND+created_date+%3C+%272026-01-01T00%3A00%3A00%27&%24group=borough&%24order=borough&%24limit=50000",
+      "rows": 6,
+      "sha256": "f10853b3252ca22c354721ce4171f9aedbe4777fb7d04bd53a6489e06649f32a"
+    },
+    {
+      "id": "erm2-nwe9",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=borough%2Cdate_trunc_ymd%28created_date%29+as+created_day%2Cdate_trunc_ymd%28closed_date%29+as+closed_day%2Ccount%28*%29+as+n&%24where=created_date+%3E%3D+%272025-12-01T00%3A00%3A00%27+AND+created_date+%3C+%272026-01-01T00%3A00%3A00%27+AND+closed_date+%3E%3D+created_date+AND+closed_date+%3C+%272026-11-04T00%3A00%3A00%27&%24group=borough%2Ccreated_day%2Cclosed_day&%24order=borough%2Ccreated_day%2Cclosed_day&%24limit=50000",
+      "rows": 13445,
+      "sha256": "6f70e24a39d40514fed829f203b27e51d506a9fb2b0403194f4101a55c2fd6d2"
+    },
+    {
+      "id": "7ym2-wayt",
+      "url": "https://data.cityofnewyork.us/resource/7ym2-wayt.json?%24select=requestid%2Csegmentid%2Cwktgeom%2Cstreet%2Cfromst%2Ctost%2Cdirection%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cvol&%24where=boro%3D%27Manhattan%27+AND+yr%3D2024&%24order=requestid%2Csegmentid%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cdirection&%24limit=50000",
+      "rows": 21772,
+      "sha256": "7c14159d33098ed27b1ed0f25e00163e49b669616d0df132aaf9a0f9b3360cbc"
+    },
+    {
+      "id": "7ym2-wayt",
+      "url": "https://data.cityofnewyork.us/resource/7ym2-wayt.json?%24select=requestid%2Csegmentid%2Cwktgeom%2Cstreet%2Cfromst%2Ctost%2Cdirection%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cvol&%24where=boro%3D%27Manhattan%27+AND+yr%3D2023&%24order=requestid%2Csegmentid%2Cyr%2Cm%2Cd%2Chh%2Cmm%2Cdirection&%24limit=50000",
+      "rows": 16374,
+      "sha256": "1c7f74db4d2e9e1e0265c36f0722c4e8b6c3568020f13f517d320628c9ec1667"
+    }
+  ]
+}

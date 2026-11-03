@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "data": "node scripts/ingest.mjs && node scripts/supplement.mjs && node scripts/prepare-data.mjs && node scripts/build-territories.mjs && node scripts/build-urban.mjs && node scripts/source-usage.mjs",
-    "verify": "node scripts/verify.mjs && node scripts/verify-territories.mjs && node scripts/verify-priority2.mjs && node scripts/verify-priority3.mjs",
+    "verify": "node scripts/verify.mjs && node scripts/verify-territories.mjs && node scripts/verify-priority2.mjs && node scripts/verify-priority3.mjs && node scripts/verify-outcomes.mjs",
     "verify:ui": "node --experimental-vm-modules scripts/ui-check.mjs && node scripts/verify-traceability-page.mjs",
     "verify:all": "npm run verify && npm run verify:ui",
     "data:nta": "node scripts/pull-nta-demographics.mjs && node scripts/build-territories.mjs",

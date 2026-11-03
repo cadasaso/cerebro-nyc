@@ -4,3 +4,6 @@ qa-priority2/
 qa-priority3/
 .sites-runtime/
 tmp/
+
+dist/
+__pycache__/
