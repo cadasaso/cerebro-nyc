@@ -115,3 +115,7 @@ El repositorio no incluye `node_modules`, contraseñas, llaves ni datos individu
 Se integran cierres administrativos 311 para la cohorte diciembre 2025, satisfacción de respuestas 2025 y aforos históricos DOT 2023–2025. Las tablas indican denominadores, fechas, exclusiones y cobertura. La satisfacción no se enlaza con la cohorte de diciembre. Los aforos no acreditan congestión, capacidad vial ni cobertura completa de las nueve celdas.
 
 Las consultas agregadas y sus SHA-256 están en `data-sources/outcomes-manifest.json`. No se descargan identidades ni direcciones de solicitantes 311. `node scripts/pull-outcomes.mjs` consulta 311 y aforos 2025; `node scripts/pull-traffic-2024.mjs 2024` y `node scripts/pull-traffic-2024.mjs 2023` completan los años históricos. Con Python y `pyproj==3.8.0`, `python scripts/build-outcomes.py` reconstruye los indicadores; las instantáneas publicadas permiten abrir y compilar el sistema sin Python ni consultas externas. `node scripts/verify-outcomes.mjs` comprueba denominadores, agregados y huellas de las descargas.
+
+## Verificación ejecutada en la web publicada
+
+El 3 de noviembre de 2026 se ejecutó la auditoría sobre el sitio publicado en vistas de 1180, 390 y 412 px. Las tres aprobaron 143/143 controles, 30 IDs y cero errores, sin desbordamiento horizontal. [Informe y evidencia JSON descargada](docs/TRAZABILIDAD-WEB.md). Esta evidencia corresponde a F01–F21 y F25–F33 de la versión publicada; no certifica disponibilidad de enlaces externos, WebGL ni los nuevos indicadores F34–F36.
