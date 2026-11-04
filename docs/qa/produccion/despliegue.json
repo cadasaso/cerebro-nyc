@@ -1,0 +1,15 @@
+{
+  "consultedDate": "2026-11-03",
+  "source": "Conexion autenticada de Vercel, get_deployment",
+  "deploymentId": "dpl_tfgzRoeo2rhhMvdWpFNJVXEMSfM6",
+  "projectId": "prj_ukEO85RCPnR2BdcZKe8jVb1gKhdK",
+  "projectName": "cerebro-nyc-datos-publicos",
+  "team": "cadasaso",
+  "state": "READY",
+  "target": "production",
+  "sourceType": "drop",
+  "url": "https://cerebro-nyc-datos-publicos.vercel.app",
+  "deploymentUrl": "https://cerebro-nyc-datos-publicos-9n1pl5wbc-cadasaso.vercel.app",
+  "commit": null,
+  "note": "Subida manual del equipo mediante Drop, no despliegue Git. No se le atribuye un commit no comunicado por Vercel."
+}

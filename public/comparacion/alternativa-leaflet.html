@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cerebro NYC | Alternativa Leaflet</title>
+  <link rel="stylesheet" href="/comparacion/leaflet/leaflet.css">
+  <style>
+    body{font:16px/1.6 system-ui;margin:0;color:#18323c;background:#f3f6f7}
+    main{max-width:1000px;margin:auto;padding:24px}h1{font-size:28px;line-height:1.25}
+    a{color:#12676d}#map{height:440px;background:#e6eef0;border:1px solid #b6c8cf}
+    select{font:inherit;padding:8px;max-width:100%}.scroll{overflow:auto}
+    table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:10px;border-bottom:1px solid #b6c8cf}
+    .leaflet-interactive:focus{outline:3px solid #b55c00}label{display:block}
+    @media(max-width:600px){main{padding:16px}#map{height:360px}}
+  </style>
+</head>
+<body><main>
+  <a href="/comparacion.html">Volver a la comparacion</a>
+  <h1>Alternativa evaluada: Leaflet 1.9.4</h1>
+  <p>Censo 2020, fuente F31 y limites F01. Poblacion total, no densidad.</p>
+  <label for="borough">Borough</label><select id="borough"><option value="">Todos</option></select>
+  <p id="selection" aria-live="polite"></p>
+  <div id="map" role="region" aria-label="Mapa Leaflet de poblacion por borough"></div>
+  <p id="status" role="status">Cargando datos...</p>
+  <div class="scroll"><table><caption>Censo 2020 | personas</caption><thead><tr><th>Borough</th><th>Habitantes</th></tr></thead><tbody id="values"></tbody></table></div>
+  <p>Leaflet funciona para esta cartografia 2D. Para el Gemelo se conserva MapLibre con su integracion Three.js; la defensa completa y los limites del ensayo estan en docs/DEFENSA-HERRAMIENTA-DESCARTADA.md del paquete.</p>
+  <p><a href="/comparacion/leaflet/LEAFLET-LICENSE.txt">Licencia BSD-2-Clause</a> | <a href="/data/toolComparison.json">Datos comunes</a></p>
+</main>
+<script src="/comparacion/leaflet/leaflet.js"></script>
+<script src="/comparacion/alternativa-leaflet.js"></script>
+</body></html>

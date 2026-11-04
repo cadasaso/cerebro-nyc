@@ -1,0 +1,29 @@
+{
+  "testedAt": "2026-11-03T23:20:07.720Z",
+  "baseUrl": "https://cerebro-nyc-datos-publicos.vercel.app",
+  "passed": true,
+  "scope": "F01-F21 y F25-F33; F34-F36 comprobadas por browser-release.cjs",
+  "views": [
+    {
+      "width": 1180,
+      "verified": 143,
+      "ids": 30,
+      "errors": 0,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "verified": 143,
+      "ids": 30,
+      "errors": 0,
+      "overflow": false
+    },
+    {
+      "width": 412,
+      "verified": 143,
+      "ids": 30,
+      "errors": 0,
+      "overflow": false
+    }
+  ]
+}
