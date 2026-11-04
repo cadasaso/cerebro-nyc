@@ -33,7 +33,7 @@ La inspeccion visual detecto que Leaflet perdia el encuadre al redimensionar. Se
 
 Carpeta `qa/navegador/`, relativa a este documento:
 
-Los JSON y SVG estan versionados en el repositorio. Las capturas PNG indicadas a continuacion se conservan en el ZIP de revision, en `evidencias/navegador/`.
+Los JSON, SVG y las capturas PNG indicadas a continuacion estan versionados en el repositorio.
 
 - `resultado.json`: resultado estructurado, navegador, viewports, conteos de pixeles y SHA-256 de los tres JSON probados.
 - `comparador-1440.png`, `comparador-390.png`, `comparador-412.png`: capturas completas del comparador.

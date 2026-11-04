@@ -27,7 +27,7 @@ La decision es especifica del alcance actual: mapa territorial con Gemelo 3D y c
 
 ## Limites de la evidencia
 
-El informe JSON del navegador esta en `qa/navegador/`, relativa a este documento. Las capturas PNG complementarias se conservan en el ZIP de revision, en `evidencias/navegador/`. El script es `scripts/browser-release.cjs`, desde la raiz del proyecto. No se midieron tiempos, memoria, facilidad de aprendizaje, usabilidad con participantes ni todas las extensiones disponibles. La afirmacion sobre trabajo de migracion es una evaluacion de arquitectura basada en `src/maps.js`, no una estimacion medida en horas. Las pruebas de vistas moviles usan un navegador de escritorio redimensionado.
+El informe JSON y las capturas del navegador estan en `qa/navegador/`, relativa a este documento. El script es `scripts/browser-release.cjs`, desde la raiz del proyecto. No se midieron tiempos, memoria, facilidad de aprendizaje, usabilidad con participantes ni todas las extensiones disponibles. La afirmacion sobre trabajo de migracion es una evaluacion de arquitectura basada en `src/maps.js`, no una estimacion medida en horas. Las pruebas de vistas moviles usan un navegador de escritorio redimensionado.
 
 ## Fuentes primarias
 

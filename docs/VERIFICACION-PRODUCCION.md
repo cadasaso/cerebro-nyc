@@ -41,13 +41,13 @@ El resumen se guardo a las 18:20:07 America/Bogota, 3 de noviembre de 2026. Su a
 
 Todas las rutas de evidencia de este informe parten de la raiz del repositorio:
 
-Los JSON y SVG estan versionados en GitHub. Las capturas PNG se entregan por separado en el ZIP de revision, en `evidencias/produccion/`.
+Los JSON, SVG y las capturas PNG estan versionados en GitHub, en `docs/qa/produccion/`.
 
 - `docs/qa/produccion/resultado.json`: navegador, URL, viewports, selecciones, pixeles, descarga y SHA-256 de las instantaneas de referencia.
 - `docs/qa/produccion/despliegue.json`: datos del despliegue READY consultado.
 - `docs/qa/produccion/trazabilidad-1180.json`, `trazabilidad-390.json`, `trazabilidad-412.json`: informes descargados desde la web publicada.
 - `docs/qa/produccion/resumen-trazabilidad.json`: resumen de las tres ejecuciones de fuentes.
-- `docs/qa/produccion/poblacion-censo2020.svg`: exportacion real. Las capturas PNG citadas en los controles estan en el ZIP de revision.
+- `docs/qa/produccion/poblacion-censo2020.svg` y las capturas PNG de esa carpeta: exportacion real y evidencia visual de los controles.
 
 Los scripts reproducibles estan en `scripts/browser-release.cjs` y `scripts/browser-audit.cjs`; ambos aceptan `BASE_URL` y `QA_OUTPUT`. Las pruebas locales previas permanecen separadas en `docs/qa/navegador/`.
 
