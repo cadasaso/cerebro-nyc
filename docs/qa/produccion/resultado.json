@@ -1,0 +1,122 @@
+{
+  "testedAt": "2026-11-03T23:18:12.129Z",
+  "baseUrl": "https://cerebro-nyc-datos-publicos.vercel.app",
+  "scope": "URL indicada",
+  "views": [
+    {
+      "comparison": {
+        "width": 1440,
+        "height": 1000,
+        "rows": 5,
+        "total": 8804190,
+        "selection": true,
+        "barClick": true,
+        "polygonClick": true,
+        "svgDownload": true,
+        "mapPixels": {
+          "width": 538,
+          "height": 381,
+          "teal": 39736,
+          "yellow": 3300
+        },
+        "overflow": false
+      },
+      "outcomes": {
+        "width": 1440,
+        "closureRows": 5,
+        "surveyRows": 5,
+        "trafficRows": 9,
+        "measuredCells": 3,
+        "missingCells": 6,
+        "jsonMatchesVisibleValues": true,
+        "overflow": false
+      }
+    },
+    {
+      "comparison": {
+        "width": 390,
+        "height": 844,
+        "rows": 5,
+        "total": 8804190,
+        "selection": true,
+        "barClick": true,
+        "polygonClick": true,
+        "svgDownload": true,
+        "mapPixels": {
+          "width": 316,
+          "height": 341,
+          "teal": 27015,
+          "yellow": 2671
+        },
+        "overflow": false
+      },
+      "outcomes": {
+        "width": 390,
+        "closureRows": 5,
+        "surveyRows": 5,
+        "trafficRows": 9,
+        "measuredCells": 3,
+        "missingCells": 6,
+        "jsonMatchesVisibleValues": true,
+        "overflow": false
+      }
+    },
+    {
+      "comparison": {
+        "width": 412,
+        "height": 915,
+        "rows": 5,
+        "total": 8804190,
+        "selection": true,
+        "barClick": true,
+        "polygonClick": true,
+        "svgDownload": true,
+        "mapPixels": {
+          "width": 338,
+          "height": 341,
+          "teal": 31021,
+          "yellow": 2859
+        },
+        "overflow": false
+      },
+      "outcomes": {
+        "width": 412,
+        "closureRows": 5,
+        "surveyRows": 5,
+        "trafficRows": 9,
+        "measuredCells": 3,
+        "missingCells": 6,
+        "jsonMatchesVisibleValues": true,
+        "overflow": false
+      }
+    }
+  ],
+  "errors": [],
+  "browserVersion": "156.0.4314.58",
+  "webgl": "SwiftShader, GPU por software; no acredita un telefono fisico",
+  "leaflet": {
+    "version": "1.9.4",
+    "polygons": 5,
+    "selector": true,
+    "polygonClick": true,
+    "mobileOverflow": false,
+    "mobilePixels": {
+      "width": 358,
+      "height": 363,
+      "teal": 32678,
+      "yellow": 176
+    }
+  },
+  "noWebgl": {
+    "table": true,
+    "chart": true,
+    "selector": true,
+    "newUnhandledErrors": 0
+  },
+  "inputSha256": {
+    "toolComparison.json": "80dac55e4a856c2571ce6125e3edcec429d80766756892256523ba16735de3e4",
+    "serviceOutcomes.json": "ff3c22a8a50132911307e91448a96e292a1028784ddbf788aa724894d7c99dd1",
+    "trafficCounts.json": "741143f5190f0a06e7a91056e0e5d8e2e07ce8437b206f5028e1533f611533a7"
+  },
+  "passed": true
+}

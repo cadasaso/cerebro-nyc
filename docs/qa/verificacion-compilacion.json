@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "scope": "Copia local entrega-completa/proyecto",
+  "build": {"command": "npm run build", "exitCode": 0, "modules": 2121, "output": "dist", "postbuild": "Directorio cultural minimizado e indice de 30 referencias publicas"},
+  "verification": {
+    "command": "npm run verify:all",
+    "exitCode": 0,
+    "boroughs": 5,
+    "ntaAreas": 262,
+    "ntaResidential": 197,
+    "midtownCells": 9,
+    "outcomes": "Cierres, denominadores, satisfaccion, aforos y huellas de consultas: OK",
+    "comparison": "Mismos totales censales, union 5/5, versiones y archivos: OK",
+    "domUi": {"sections": 13, "charts": 49, "sourceClicks": 143, "scope": "DOM simulado; F01-F21 y F25-F33"}
+  },
+  "browserEvidence": "navegador/resultado.json",
+  "productionVerified": false
+}

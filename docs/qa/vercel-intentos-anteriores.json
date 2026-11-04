@@ -1,0 +1,14 @@
+{
+  "consultedDate": "2026-11-03",
+  "team": "cadasaso",
+  "projectId": "prj_z4JxfNxlx1NTNiPN8vmuckTqA8vv",
+  "projectName": "cerebro-nyc",
+  "source": "Conexion autenticada de Vercel: list_deployments, get_deployment y list_deployment_events",
+  "deployments": [
+    {"id": "dpl_4hjKGaeFyRtaaREgQB7BAyDW2KvH", "url": "https://cerebro-42j17vdof-cadasaso.vercel.app", "state": "ERROR", "errorCode": "git_info_fail", "commit": "98c723138146cededfcecf126dbd5e18d99e4f92", "buildEvents": []},
+    {"id": "dpl_HGBNYNMgHbXftWZ7jpTVxANNaSth", "url": "https://cerebro-mbdbyx1w4-cadasaso.vercel.app", "state": "ERROR", "errorCode": "git_info_fail", "commit": "98c723138146cededfcecf126dbd5e18d99e4f92", "buildEvents": []}
+  ],
+  "readyDeploymentFound": false,
+  "newDeploymentCreated": false,
+  "interpretation": "Los intentos no acreditan publicacion. El codigo identifica un fallo de informacion Git; los eventos vacios no permiten atribuirlo a la compilacion. El equipo realizara la subida."
+}

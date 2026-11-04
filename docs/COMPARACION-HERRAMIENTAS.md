@@ -44,7 +44,11 @@ La comparación anterior describía funciones generales. Esta versión añade ta
 
 ## Evidencia y alcance
 
-Se comprobaron automáticamente el total censal, las cinco categorías, las versiones de dependencias, la unión territorial y la presencia del caso en el paquete. El estado del renderizado real y la publicación se registran por separado en ESTADO-PUBLICACION-F34-F36.md. No se da por acreditada una prueba de usuario ni una comparación cronometrada.
+Se comprobaron automáticamente el total censal, las cinco categorías, las versiones de dependencias, la unión territorial y la presencia del caso en el paquete. La prueba real de navegador se registra en [PRUEBA-REAL-COMPARADOR.md](PRUEBA-REAL-COMPARADOR.md), con capturas y resultado JSON. La publicación se registra por separado en ESTADO-PUBLICACION-F34-F36.md. No se da por acreditada una prueba de usuario ni una comparación cronometrada.
+
+## Alternativa descartada como motor del Gemelo
+
+Esta revision incorpora Leaflet 1.9.4 con los mismos datos y poligonos en `/comparacion/alternativa-leaflet.html`. La [defensa de la decision](DEFENSA-HERRAMIENTA-DESCARTADA.md) recoge sus ventajas para mapas 2D sin WebGL y el trabajo que exigiria sustituir la integracion MapLibre/Three.js del Gemelo. Leaflet queda como ensayo reproducible, no como dependencia de la aplicacion principal. Las tres bibliotecas de visualizacion conservan su licencia local y no requieren servicios externos para estos casos.
 
 ## Fuentes técnicas oficiales
 

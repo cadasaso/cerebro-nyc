@@ -1,0 +1,50 @@
+<svg width="538" height="380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 538 380">
+<rect width="538" height="380" x="0" y="0" fill="#0b2028"></rect>
+<path d="M105.5 20L105.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M172.5 20L172.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M240.5 20L240.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M307.5 20L307.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M375.5 20L375.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M442.5 20L442.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M510.5 20L510.5 335" fill="none" stroke="#24434d" class="zr0-cls-0"></path>
+<path d="M105.5 335L105.5 20" fill="none" stroke="#6E7079" stroke-linecap="round" class="zr0-cls-0"></path>
+<path d="M105 335.5L100 335.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M105 272.5L100 272.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M105 209.5L100 209.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M105 146.5L100 146.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M105 83.5L100 83.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<path d="M105 20.5L100 20.5" fill="none" stroke="#6E7079" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" transform="translate(97 303.5)" fill="#dcebee">Staten Island</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" transform="translate(97 240.5)" fill="#dcebee">Bronx</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" transform="translate(97 177.5)" fill="#dcebee">Manhattan</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" transform="translate(97 114.5)" fill="#dcebee">Queens</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Microsoft YaHei;" transform="translate(97 51.5)" fill="#dcebee">Brooklyn</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(105 343)" fill="#b5ccd2">0 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(172.5 343)" fill="#b5ccd2">0.5 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(240 343)" fill="#b5ccd2">1 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(307.5 343)" fill="#b5ccd2">1.5 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(375 343)" fill="#b5ccd2">2 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(442.5 343)" fill="#b5ccd2">2.5 M</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Microsoft YaHei;" xml:space="preserve" y="6" transform="translate(510 343)" fill="#b5ccd2">3 M</text>
+<path d="M105 281.765l66.9258 0l0 43.47l-66.9258 0Z" fill="#38616b" class="zr0-cls-1"></path>
+<path d="M105 218.765l198.8083 0l0 43.47l-198.8083 0Z" fill="#38616b" class="zr0-cls-1"></path>
+<path d="M105 155.765l228.7239 0l0 43.47l-228.7239 0Z" fill="#38616b" class="zr0-cls-1"></path>
+<path d="M105 92.765l324.7376 0l0 43.47l-324.7376 0Z" fill="#38616b" class="zr0-cls-1"></path>
+<path d="M105 29.765l369.37 0l0 43.47l-369.37 0Z" fill="#86ded2" class="zr0-cls-2"></path>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+pointer-events:none;
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+fill:rgba(61,106,117,1);
+}
+.zr0-cls-2:hover {
+cursor:pointer;
+fill:rgba(147,244,231,1);
+}
+
+]]>
+
+</style>
+</svg>

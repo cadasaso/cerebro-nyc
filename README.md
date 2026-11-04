@@ -9,7 +9,8 @@ Sistema territorial de Nueva York construido para la segunda entrega del Taller 
 
 ## Enlaces de entrega
 
-- Sistema publicado y verificado: https://cerebro-nyc-taller.dorisot.chatgpt.site/
+- Version actual publicada y verificada, con F34-F36 y comparador: https://cerebro-nyc-datos-publicos.vercel.app/
+- Version publicada anterior, auditada para F01-F21 y F25-F33: https://cerebro-nyc-taller.dorisot.chatgpt.site/
 - Espejo anterior en Vercel: https://nueva-yorkcerebro-digital.vercel.app/
 - Repositorio público del grupo: https://github.com/cadasaso/cerebro-nyc
 
@@ -52,6 +53,8 @@ Se añade un caso reproducible con los mismos cinco totales del Censo 2020: barr
 [Comparación completa y decisión razonada](docs/COMPARACION-HERRAMIENTAS.md). Al iniciar la aplicación, abrir **/comparacion.html**. Las licencias y bibliotecas se incluyen localmente. No se presentan métricas de rendimiento que no se hayan medido.
 
 Elegimos ECharts para comparar magnitudes y MapLibre para localizar los datos. Ambas cumplen tareas complementarias; Vite permite conservarlas en una aplicación estática.
+
+La revision `entrega-completa` incluye una prueba real en navegador de escritorio y vistas de 390 y 412 px: [resultados y alcance](docs/PRUEBA-REAL-COMPARADOR.md). Se anade el prototipo Leaflet 1.9.4 con los mismos datos y la [defensa de la herramienta descartada](docs/DEFENSA-HERRAMIENTA-DESCARTADA.md). La evidencia local no acredita publicacion en produccion.
 
 ## Bitácora de IA
 
@@ -105,12 +108,14 @@ El repositorio no incluye `node_modules`, contraseñas, llaves ni datos individu
 
 ## Actualización F34–F36
 
-**Estado: versión preparada y pruebas locales aprobadas; publicación nueva pendiente de comprobar.** El equipo realizará la subida a Vercel. [Estado y comprobaciones de publicación](docs/ESTADO-PUBLICACION-F34-F36.md).
+**Estado: publicada y verificada en produccion el 3 de noviembre de 2026.** El equipo la subio mediante Vercel Drop; se confirmo READY y se repitieron las pruebas del comparador y de F34-F36 en la URL publica. [Estado y comprobaciones de publicacion](docs/ESTADO-PUBLICACION-F34-F36.md), [evidencia de produccion](docs/VERIFICACION-PRODUCCION.md).
 
 Se integran cierres administrativos 311 para la cohorte diciembre 2025, satisfacción de respuestas 2025 y aforos históricos DOT 2023–2025. Las tablas indican denominadores, fechas, exclusiones y cobertura. La satisfacción no se enlaza con la cohorte de diciembre. Los aforos no acreditan congestión, capacidad vial ni cobertura completa de las nueve celdas.
 
 Las consultas agregadas y sus SHA-256 están en `data-sources/outcomes-manifest.json`. No se descargan identidades ni direcciones de solicitantes 311. `node scripts/pull-outcomes.mjs` consulta 311 y aforos 2025; `node scripts/pull-traffic-2024.mjs 2024` y `node scripts/pull-traffic-2024.mjs 2023` completan los años históricos. Con Python y `pyproj==3.8.0`, `python scripts/build-outcomes.py` reconstruye los indicadores; las instantáneas publicadas permiten abrir y compilar el sistema sin Python ni consultas externas. `node scripts/verify-outcomes.mjs` comprueba denominadores, agregados y huellas de las descargas.
 
-## Verificación ejecutada en la web publicada
+## Verificación anterior de la web publicada
 
 El 3 de noviembre de 2026 se ejecutó la auditoría sobre el sitio publicado en vistas de 1180, 390 y 412 px. Las tres aprobaron 143/143 controles, 30 IDs y cero errores, sin desbordamiento horizontal. [Informe y evidencia JSON descargada](docs/TRAZABILIDAD-WEB.md). Esta evidencia corresponde a F01–F21 y F25–F33 de la versión publicada; no certifica disponibilidad de enlaces externos, WebGL ni los nuevos indicadores F34–F36.
+
+La verificacion posterior del despliegue Vercel incluyo F34-F36 y el comparador en 1440, 390 y 412 px, ademas de repetir la auditoria de 143 controles. [Informe de produccion](docs/VERIFICACION-PRODUCCION.md), [resultado de indicadores y comparador](docs/qa/produccion/resultado.json), [resumen de fuentes](docs/qa/produccion/resumen-trazabilidad.json). Los JSON y SVG quedan versionados en `docs/qa/`; identifican el despliegue y la fecha de su prueba. Las capturas PNG complementarias se entregan por separado en el ZIP de revision.
